@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "643909293541",
+    "project_id": "onlinecoffeeshopapp",
+    "storage_bucket": "onlinecoffeeshopapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:643909293541:android:252d22a56c4e82d14e0b0c",
+        "android_client_info": {
+          "package_name": "com.example.onlincecoffeeshopapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBk49vdzyQhXAP2iLDJ225PIkoZ8_WBfSc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
