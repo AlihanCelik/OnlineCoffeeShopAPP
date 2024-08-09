@@ -1,4 +1,4 @@
-package com.example.onlincecoffeeshopapp
+package com.example.onlincecoffeeshopapp.Activity
 
 import android.os.Bundle
 import android.view.WindowManager

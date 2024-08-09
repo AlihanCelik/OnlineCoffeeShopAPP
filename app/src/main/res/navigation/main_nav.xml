@@ -7,7 +7,7 @@
 
     <activity
         android:id="@+id/mainActivity"
-        android:name="com.example.onlincecoffeeshopapp.MainActivity"
+        android:name="com.example.onlincecoffeeshopapp.Activity.MainActivity"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
 </navigation>

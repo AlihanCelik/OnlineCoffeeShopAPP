@@ -1,13 +1,10 @@
-package com.example.onlincecoffeeshopapp
+package com.example.onlincecoffeeshopapp.Activity
 
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import androidx.navigation.Navigation
 import androidx.navigation.ui.NavigationUI
-import com.example.onlincecoffeeshopapp.databinding.ActivityIntroBinding
+import com.example.onlincecoffeeshopapp.R
 import com.example.onlincecoffeeshopapp.databinding.ActivityMainBinding
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
