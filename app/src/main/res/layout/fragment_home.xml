@@ -72,6 +72,7 @@
                     android:fontFamily="@font/myfont"
                     android:layout_marginStart="16dp"
                     android:textSize="17dp"
+                    android:layout_marginTop="2dp"
                     android:text="Grab your first coffie in this morning">
                 </TextView>
                 <androidx.constraintlayout.widget.ConstraintLayout
@@ -155,9 +156,10 @@
                     </androidx.recyclerview.widget.RecyclerView>
 
                     <ProgressBar
+                        android:id="@+id/progressBarPopular"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:indeterminateTint="@color/grey"
+                        android:indeterminateTint="@color/orange"
                         android:indeterminateTintMode="src_in"
                         style="?android:attr/progressBarStyle"
                         app:layout_constraintBottom_toBottomOf="parent"
@@ -218,7 +220,7 @@
                     <ProgressBar
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:indeterminateTint="@color/grey"
+                        android:indeterminateTint="@color/orange"
                         android:indeterminateTintMode="src_in"
                         style="?android:attr/progressBarStyle"
                         app:layout_constraintBottom_toBottomOf="parent"
