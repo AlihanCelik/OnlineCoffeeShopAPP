@@ -5,15 +5,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.example.onlincecoffeeshopapp.databinding.FragmentHomeBinding
+import com.example.onlincecoffeeshopapp.R
 
-
-class HomeFragment : Fragment() {
-    private lateinit var binding:FragmentHomeBinding
+class SettingsFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
 
     }
 
@@ -21,8 +18,10 @@ class HomeFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding=FragmentHomeBinding.inflate(layoutInflater)
-        return binding.root
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_settings, container, false)
     }
+
+
 
 }

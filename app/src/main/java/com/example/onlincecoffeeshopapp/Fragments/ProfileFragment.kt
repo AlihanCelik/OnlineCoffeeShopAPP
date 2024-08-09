@@ -5,15 +5,17 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.example.onlincecoffeeshopapp.databinding.FragmentHomeBinding
+import com.example.onlincecoffeeshopapp.R
 
-
-class HomeFragment : Fragment() {
-    private lateinit var binding:FragmentHomeBinding
+/**
+ * A simple [Fragment] subclass.
+ * Use the [ProfileFragment.newInstance] factory method to
+ * create an instance of this fragment.
+ */
+class ProfileFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
 
     }
 
@@ -21,8 +23,9 @@ class HomeFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding=FragmentHomeBinding.inflate(layoutInflater)
-        return binding.root
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_profile, container, false)
     }
+
 
 }
