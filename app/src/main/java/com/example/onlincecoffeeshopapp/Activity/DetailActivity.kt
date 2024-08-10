@@ -26,6 +26,7 @@ class DetailActivity : BaseActivity() {
         binding=ActivityDetailBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        managmentCart=ManagmentCart(this)
         bundle()
         initSizeList()
 
