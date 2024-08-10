@@ -133,7 +133,7 @@
                 </TextView>
 
                 <TextView
-                    android:id="@+id/price1"
+                    android:id="@+id/totalFee"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="$15"
@@ -165,7 +165,7 @@
                 </TextView>
 
                 <TextView
-                    android:id="@+id/price2"
+                    android:id="@+id/deliveryTxt"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="$15"
@@ -197,7 +197,7 @@
                 </TextView>
 
                 <TextView
-                    android:id="@+id/price3"
+                    android:id="@+id/totalTax"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="$15"
@@ -236,7 +236,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Delivery"
+                    android:text="Total"
                     android:textColor="@color/black"
                     android:textSize="16sp"
                     android:textStyle="bold">
@@ -244,13 +244,14 @@
                 </TextView>
 
                 <TextView
-                    android:id="@+id/price4"
+                    android:id="@+id/totalTxt"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="$15"
                     android:textColor="@color/orange"
                     android:textSize="16sp"
-                    android:textStyle="bold"></TextView>
+                    android:textStyle="bold">
+                </TextView>
             </LinearLayout>
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/addToCart"
