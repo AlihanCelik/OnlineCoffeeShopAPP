@@ -42,9 +42,10 @@
             android:layout_height="match_parent"
             android:layout_gravity="bottom"
             android:background="@color/black"
-            android:fitsSystemWindows="true"
             android:padding="0dp"
             android:layout_margin="0dp"
+            app:itemBackground="@android:color/transparent"
+            app:itemActiveIndicatorStyle="@android:color/transparent"
             app:itemIconTint="@color/color_item_bottom_nav"
             app:labelVisibilityMode="unlabeled"
             app:menu="@menu/bottom_menu" />
