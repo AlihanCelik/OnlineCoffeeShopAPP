@@ -16,7 +16,7 @@ data class ItemsModel(
     constructor(parcel: Parcel) : this(
         parcel.readString().toString(),
         parcel.readString().toString(),
-        TODO("picUrl"),
+        parcel.createStringArrayList() as ArrayList<String>,
         parcel.readDouble(),
         parcel.readDouble(),
         parcel.readInt(),
