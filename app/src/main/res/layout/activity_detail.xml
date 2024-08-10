@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTint="@color/white"
     tools:context=".Activity.DetailActivity">
 
     <androidx.core.widget.NestedScrollView
@@ -40,6 +41,15 @@
                 android:layout_marginTop="48dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
+            <ImageView
+                android:id="@+id/fav_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/favorite_white"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="48dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
 
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/materialCardView"
@@ -75,7 +85,7 @@
                         android:layout_width="45dp"
                         android:layout_height="28dp"
                         android:gravity="center"
-                        android:text="5"
+                        android:text="0"
                         android:textColor="@color/black"
                         android:textSize="16sp"
                         android:textStyle="bold"

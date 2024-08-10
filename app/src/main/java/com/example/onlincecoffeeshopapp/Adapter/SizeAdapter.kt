@@ -5,7 +5,6 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
-import com.example.onlincecoffeeshopapp.Model.ItemsModel
 import com.example.onlincecoffeeshopapp.R
 import com.example.onlincecoffeeshopapp.databinding.ItemSizeBinding
 
@@ -44,8 +43,8 @@ class SizeAdapter(val items:MutableList<String>):RecyclerView.Adapter<SizeAdapte
             holder.binding.itemCard.setCardBackgroundColor(ContextCompat.getColor(context,R.color.coffeeSize))
         }
         val imageSize=when(ps){
-            0->45.dpToPx(context)
-            1->50.dpToPx(context)
+            0->35.dpToPx(context)
+            1->45.dpToPx(context)
             2->55.dpToPx(context)
             3->65.dpToPx(context)
             else->70.dpToPx(context)

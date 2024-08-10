@@ -1,10 +1,12 @@
 package com.example.onlincecoffeeshopapp.Adapter
 
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.example.onlincecoffeeshopapp.Activity.DetailActivity
 import com.example.onlincecoffeeshopapp.Model.ItemsModel
 import com.example.onlincecoffeeshopapp.databinding.ActivityMainBinding
 import com.example.onlincecoffeeshopapp.databinding.ItemCatgoryBinding
@@ -34,7 +36,9 @@ class PopularAdapter(val items:MutableList<ItemsModel>):RecyclerView.Adapter<Pop
         holder.binding.ratingBarItem.rating=items[position].rating.toFloat()
         Glide.with(context).load(item.picUrl[0]).into(holder.binding.shapeableImageView)
         holder.itemView.setOnClickListener {
-
+            val intent=Intent(context,DetailActivity::class.java)
+            intent.putExtra("object",item)
+            context.startActivity(intent)
         }
 
     }
