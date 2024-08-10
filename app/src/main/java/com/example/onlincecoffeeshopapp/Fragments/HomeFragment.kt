@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.onlincecoffeeshopapp.Adapter.CategoryAdapter
+import com.example.onlincecoffeeshopapp.Adapter.OfferAdapter
 import com.example.onlincecoffeeshopapp.Adapter.PopularAdapter
 import com.example.onlincecoffeeshopapp.ViewModel.HomeViewModel
 import com.example.onlincecoffeeshopapp.databinding.FragmentHomeBinding
@@ -35,6 +36,20 @@ class HomeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         initCategory()
         initPopular()
+        initOffer()
+    }
+
+    private fun initOffer() {
+        binding.progressBarOffer.visibility=View.VISIBLE
+        viewModel.offer.observe(viewLifecycleOwner, Observer {
+            binding.recyclerView3.apply {
+                layoutManager=LinearLayoutManager(context,LinearLayoutManager.HORIZONTAL,false)
+                adapter=OfferAdapter(it)
+
+            }
+            binding.progressBarOffer.visibility=View.GONE
+        })
+        viewModel.loadOffer()
     }
 
     private fun initPopular() {
@@ -43,8 +58,9 @@ class HomeFragment : Fragment() {
             binding.recyclerView2.apply {
                 layoutManager=LinearLayoutManager(context,LinearLayoutManager.HORIZONTAL,false)
                 adapter=PopularAdapter(it)
-                binding.progressBarPopular.visibility=View.GONE
+
             }
+            binding.progressBarPopular.visibility=View.GONE
         })
         viewModel.loadPopular()
     }
@@ -55,8 +71,9 @@ class HomeFragment : Fragment() {
             binding.recyclerView.apply {
                 layoutManager=LinearLayoutManager(context,LinearLayoutManager.HORIZONTAL,false)
                 adapter=CategoryAdapter(it)
-                binding.progressBarCategory.visibility=View.GONE
+
             }
+            binding.progressBarCategory.visibility=View.GONE
         })
         viewModel.loadCategoyr()
     }
