@@ -10,11 +10,13 @@ class IntroActivity : BaseActivity() {
         super.onCreate(savedInstanceState)
         binding=ActivityIntroBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        startMain()
+    }
+    private fun startMain() {
         binding.startBtn.setOnClickListener {
             val intent=Intent(this, MainActivity::class.java)
             startActivity(intent)
             finish()
         }
-
     }
 }
