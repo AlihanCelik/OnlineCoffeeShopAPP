@@ -6,6 +6,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.onlincecoffeeshopapp.Adapter.CartAdapter
+import com.example.onlincecoffeeshopapp.Helper.ChangeNumberItemsListener
 import com.example.onlincecoffeeshopapp.R
 import com.example.onlincecoffeeshopapp.databinding.ActivityCartBinding
 import com.example.onlincecoffeeshopapp.databinding.ActivityDetailBinding
@@ -30,6 +32,12 @@ class CartActivity : AppCompatActivity() {
     private fun initCartList() {
         binding.rcw.apply {
             layoutManager=LinearLayoutManager(this@CartActivity,LinearLayoutManager.VERTICAL,false)
+            adapter=CartAdapter(managment.getListCart(),this@CartActivity,object : ChangeNumberItemsListener{
+                override fun onChanged() {
+                    calculateCart()
+                }
+
+            })
         }
     }
 

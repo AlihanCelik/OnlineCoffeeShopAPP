@@ -37,25 +37,43 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_marginStart="16dp"
+                <LinearLayout
                     android:layout_marginTop="60dp"
-                    android:layout_marginEnd="16dp"
-                    android:paddingStart="10dp"
                     android:layout_marginBottom="16dp"
-                    android:background="@drawable/edittext_bg"
-                    android:drawableLeft="@drawable/baseline_search_24"
-                    android:drawablePadding="8dp"
-                    android:drawableTint="@color/white"
-                    android:ems="10"
-                    android:hint="Search anything..."
-                    android:inputType="text"
-                    android:textColor="@color/grey"
-                    android:textColorHint="@color/white">
-                </EditText>
+                    android:layout_width="match_parent"
+                    android:layout_marginEnd="12dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="15dp"
+
+                        android:paddingStart="10dp"
+
+                        android:background="@drawable/edittext_bg"
+                        android:drawableLeft="@drawable/baseline_search_24"
+                        android:drawablePadding="8dp"
+                        android:drawableTint="@color/white"
+                        android:ems="10"
+                        android:hint="Search anything..."
+                        android:inputType="text"
+                        android:textColor="@color/grey"
+                        android:textColorHint="@color/white">
+                    </EditText>
+                    <ImageView
+                        android:id="@+id/cart"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/baseline_shopping_basket_24"
+                        app:tint="@color/orange">
+                    </ImageView>
+                </LinearLayout>
+
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

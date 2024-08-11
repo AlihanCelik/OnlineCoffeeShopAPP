@@ -1,5 +1,6 @@
 package com.example.onlincecoffeeshopapp.Fragments
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -7,6 +8,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.onlincecoffeeshopapp.Activity.CartActivity
 import com.example.onlincecoffeeshopapp.Adapter.CategoryAdapter
 import com.example.onlincecoffeeshopapp.Adapter.OfferAdapter
 import com.example.onlincecoffeeshopapp.Adapter.PopularAdapter
@@ -37,6 +39,15 @@ class HomeFragment : Fragment() {
         initCategory()
         initPopular()
         initOffer()
+        goToCart()
+
+    }
+
+    private fun goToCart() {
+        binding.cart.setOnClickListener {
+            val intent=Intent(context,CartActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     private fun initOffer() {
