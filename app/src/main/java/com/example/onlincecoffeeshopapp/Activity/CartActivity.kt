@@ -13,7 +13,7 @@ import com.example.onlincecoffeeshopapp.databinding.ActivityCartBinding
 import com.example.onlincecoffeeshopapp.databinding.ActivityDetailBinding
 import com.example.project1762.Helper.ManagmentCart
 
-class CartActivity : AppCompatActivity() {
+class CartActivity : BaseActivity() {
     private lateinit var binding:ActivityCartBinding
     private lateinit var managment: ManagmentCart
     private var tax:Double=0.0
