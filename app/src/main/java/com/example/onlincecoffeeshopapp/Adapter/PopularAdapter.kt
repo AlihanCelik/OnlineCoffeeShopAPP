@@ -15,7 +15,6 @@ import com.example.onlincecoffeeshopapp.databinding.ItemPopularBinding
 class PopularAdapter(val items:MutableList<ItemsModel>):RecyclerView.Adapter<PopularAdapter.PopularViewHolder>() {
     private lateinit var context: Context
     class PopularViewHolder(var binding: ItemPopularBinding):RecyclerView.ViewHolder(binding.root) {
-
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PopularViewHolder {
